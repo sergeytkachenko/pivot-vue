@@ -1,24 +1,15 @@
-# pivot-vue
+## 
 
-## Project setup
-```
-npm install
-```
+### DOCKER 
 
-### Compiles and hot-reloads for development
-```
-npm run serve
+#### Build 
+
+```bash
+docker build -f install/Dockerfile -t pivot-vue .
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
+#### Run 
 
-### Lints and fixes files
+```bash
+docker run -d --name pivot-vue --rm -p 8080:80 pivot-vue
 ```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
