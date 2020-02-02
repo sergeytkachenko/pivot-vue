@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Pivot msg="Welcome to Your Vue.js App"/>
+    <Pivot />
   </div>
 </template>
 

@@ -21,9 +21,6 @@
         components: {
             VueVirtualTable
         },
-        props: {
-            msg: String
-        },
         data: () => ({
             aggTime: 0,
             loadingTime: 0,
@@ -151,15 +148,3 @@
         }
     }
 </script>
-<style scoped>
-    .scroller {
-        height: 100%;
-    }
-
-    .user {
-        height: 32%;
-        padding: 0 12px;
-        display: flex;
-        align-items: center;
-    }
-</style>
