@@ -100,6 +100,10 @@
                     return row;
                 });
             },
+            allRecords: function () {
+                return this.count.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            },
+
             loadedMBytes: function() {
                 return Math.round(this.loadedBytes / 1024 / 1024);
             }
