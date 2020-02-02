@@ -7,22 +7,6 @@
                                :height="500"
                                :config="tableConfig"
                                :data="tableData"> </vue-virtual-table>
-            <!--      <md-table v-model="rows" md-card>-->
-            <!--        <md-table-toolbar>-->
-            <!--          <h1 class="md-title">Pivot table example</h1>-->
-            <!--        </md-table-toolbar>-->
-            <!--        <md-table-row slot="md-table-row" slot-scope="{ item }">-->
-            <!--          <md-table-cell md-label="__ROW_PATH__">-->
-            <!--            {{ item['__ROW_PATH__'].join(' ') }}-->
-            <!--          </md-table-cell>-->
-            <!--          <md-table-cell-->
-            <!--                  :md-label="column"-->
-            <!--                  v-for="column in columns"-->
-            <!--                  v-bind:key="column">-->
-            <!--            {{ item[column] }}-->
-            <!--          </md-table-cell>-->
-            <!--        </md-table-row>-->
-            <!--      </md-table>-->
         </div>
     </div>
 
@@ -46,43 +30,6 @@
             count: 0,
             loaded: 0,
             loadedBytes: 0,
-            users: [
-                {
-                    id: 1,
-                    name: 'Shawna Dubbin',
-                    email: 'sdubbin0@geocities.com',
-                    gender: 'Male',
-                    title: 'Assistant Media Planner'
-                },
-                {
-                    id: 2,
-                    name: 'Odette Demageard',
-                    email: 'odemageard1@spotify.com',
-                    gender: 'Female',
-                    title: 'Account Coordinator'
-                },
-                {
-                    id: 3,
-                    name: 'Lonnie Izkovitz',
-                    email: 'lizkovitz3@youtu.be',
-                    gender: 'Female',
-                    title: 'Operator'
-                },
-                {
-                    id: 4,
-                    name: 'Thatcher Stave',
-                    email: 'tstave4@reference.com',
-                    gender: 'Male',
-                    title: 'Software Test Engineer III'
-                },
-                {
-                    id: 5,
-                    name: 'Clarinda Marieton',
-                    email: 'cmarietonh@theatlantic.com',
-                    gender: 'Female',
-                    title: 'Paralegal'
-                }
-            ],
             columns: [],
             rows: [],
             table: null,
