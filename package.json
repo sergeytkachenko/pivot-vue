@@ -5,11 +5,18 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "dev": "vue-cli-service serve"
   },
   "dependencies": {
+    "@finos/perspective": "0.4.0",
+    "@finos/perspective-webpack-plugin": "0.4.0",
     "core-js": "^3.4.4",
-    "vue": "^2.6.10"
+    "oboe": "^2.1.5",
+    "stream-json": "^1.3.3",
+    "vue": "^2.6.10",
+    "vue-material": "^1.0.0-beta-11",
+    "vue-virtual-table": "^0.2.14"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.1.0",
@@ -18,6 +25,8 @@
     "babel-eslint": "^10.0.3",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
+    "sass": "^1.19.0",
+    "sass-loader": "^8.0.0",
     "vue-template-compiler": "^2.6.10"
   },
   "eslintConfig": {
@@ -29,7 +38,9 @@
       "plugin:vue/essential",
       "eslint:recommended"
     ],
-    "rules": {},
+    "rules": {
+      "no-console": "off"
+    },
     "parserOptions": {
       "parser": "babel-eslint"
     }
