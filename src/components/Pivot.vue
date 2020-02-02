@@ -29,8 +29,6 @@
 </template>
 
 <script>
-    // import oboe from 'oboe'
-    // import Parser from 'stream-json/Parser'
     import VueVirtualTable from 'vue-virtual-table'
     import perspective from '@finos/perspective';
 
@@ -101,12 +99,6 @@
                     row['__ROW_PATH__'] = row['__ROW_PATH__'].join('->');
                     return row;
                 });
-            },
-            allRecords: function () {
-                return this.count.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-            },
-            loadedRecords: function () {
-                return this.loaded.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
             },
             loadedMBytes: function() {
                 return Math.round(this.loadedBytes / 1024 / 1024);
@@ -190,13 +182,6 @@
             async fullLoad() {
                 this.count = await this.fetchCount();
                 await this.fetchDataStream();
-                //
-                // for (let i = 0; i < 2; i++) {
-                //     const data = await this.fetchData();
-                //     data.forEach(line => {
-                //         this.table.update([line]);
-                //     });
-                // }
             }
         },
         async created() {
