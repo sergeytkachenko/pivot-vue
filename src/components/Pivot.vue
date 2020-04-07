@@ -55,19 +55,6 @@
 			}
 		},
 		methods: {
-			transform(str) {
-				let data = str.split('[');
-				this.startLoadingAggTime = new Date();
-				data
-					.filter(x => x)
-					.forEach(d => {
-						const batch = JSON.parse('[' + d);
-						this.loaded += batch.length;
-						this.table.update(batch);
-					});
-				this.calculateLoadingTime();
-				this.calculateAggTime();
-			},
 			calculateLoadingTime() {
 				this.endLoading = new Date();
 				this.loadingTime = Math.round((this.endLoading - this.startLoading) / 1000);
