@@ -1,8 +1,8 @@
 <template>
     <div class="md-layout md-alignment-center">
         <div class="md-layout-item md-size-75">
-<!--            <h3>count records: {{allRecords}}, loaded: {{loadedMBytes}}MB</h3>-->
-<!--            <h3>load time: {{loadingTime}}s, agg time: {{aggTime}}ms</h3>-->
+            <!--            <h3>count records: {{allRecords}}, loaded: {{loadedMBytes}}MB</h3>-->
+            <!--            <h3>load time: {{loadingTime}}s, agg time: {{aggTime}}ms</h3>-->
             <vue-virtual-table :itemHeight="55"
                                :height="500"
                                :config="tableConfig"
@@ -68,9 +68,9 @@
 				const firstIndex = json.indexOf('[{');
 				const lastIndex = json.indexOf('}]');
 				if (firstIndex < 0 || lastIndex < 0) {
-					return ;
-                }
-				let data = json.slice(firstIndex , lastIndex + 2);
+					return;
+				}
+				let data = json.slice(firstIndex, lastIndex + 2);
 				this.startLoadingAggTime = new Date();
 
 				const batch = JSON.parse(data);
