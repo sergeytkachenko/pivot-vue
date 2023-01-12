@@ -9,7 +9,7 @@
     "dev": "vue-cli-service serve"
   },
   "dependencies": {
-    "@finos/perspective": "0.4.0",
+    "@finos/perspective": "1.9.1",
     "@finos/perspective-webpack-plugin": "0.4.0",
     "core-js": "^3.4.4",
     "oboe": "^2.1.5",
